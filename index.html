@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="dark:bg-slate-900 dark:text-white">
-    <nav class="relative container mx-auto p-6">
+    <nav id="top" class="relative container mx-auto p-6">
         <div class="flex items-center justify-between">
-            <div class="">
+            <div class=" flex space-x-8">
                 <h1 class="font-bold text-red-500 text-2xl">AM</h1>
             </div>
             <!-- Menu items -->
@@ -22,18 +22,21 @@
             </div>
             <a href="#" class="hidden px-6 p-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block">Get Started</a>
                 <!-- Switching-theme -->
-                <div class="flex dark:bg-brightRed rounded-full fixed right-6">
-                    <img src="/images/dark-mode.png" alt=""  class="moon w-6 h-6 cursor-pointer">
-                    <img src="/images/brightness-and-contrast.png" alt=""  class="sun w-6 h-6 cursor-pointer hidden dark:block">
-                </div>
-            <!-- Icon -->
-            <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
-                <span class="hamburger-top bg-black    dark:bg-white"></span>
-                <span class="hamburger-middle bg-black dark:bg-white"></span>
-                <span class="hamburger-bottom bg-black dark:bg-white"></span>
-            </button>
+                <!-- Icon -->
+                <div class="flex flex-col-reverse space-y-8" >
+                    
+                    <div class="flex dark:bg-brightRed rounded-full hover:bg-brightRedLight md:right-6 ">
+                        <img src="/images/dark-mode.png" alt=""  class="moon w-6 h-6 cursor-pointer">
+                        <img src="/images/brightness-and-contrast.png" alt=""  class="sun w-6 h-6 cursor-pointer hidden dark:block">
+                    </div>
+                <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                    <span class="hamburger-top bg-black    dark:bg-white"></span>
+                    <span class="hamburger-middle bg-black dark:bg-white"></span>
+                    <span class="hamburger-bottom bg-black dark:bg-white"></span>
+                </button>
+            </div>
         </div>
-        <div id="menu" class=" hidden absolute  flex-col items-center self-end hidden.py-8 mt-10 py-6 space-y-6 font-bold bg-white left-6 right-6 drop-shadow-md sm:self-center sm:w-auto md:hidden">
+        <div id="menu" class=" hidden absolute  flex-col items-center self-end hidden.py-8 mt-10 py-6 space-y-6 font-bold bg-white left-6 right-6 drop-shadow-md sm:self-center sm:w-auto dark:bg-slate-800 md:hidden">
             <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
                 <a href="#" class="hover:text-darkGrayishBlue">Product</a>
                 <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
@@ -60,6 +63,10 @@
                 <img src="/images/IMG_2155.jpeg" class="rounded-full">
             </div>
         </div>
+
+        <a href="#top" class="bottom-5 w-10 fixed right-6">
+            <img src="/images/up-arrow.png" alt="">
+        </a>
         <!-- Features -->
     </section>
 

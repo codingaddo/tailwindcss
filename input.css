@@ -9,7 +9,9 @@ body{
     background-position: 90% -25%;
 }
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 .hamburger{
     cursor: pointer;
